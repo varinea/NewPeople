@@ -4,7 +4,6 @@ document.getElementById("myBtn").addEventListener("click", api);
         fetch('https://randomuser.me/api/?results=20')
         .then(res => res.json())
         .then(data => {
-            console.log(data.results[0])
             card.innerHTML = `
             <div class="card-deck">
             <div class="card">
